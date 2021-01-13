@@ -16,7 +16,6 @@ window.addEventListener('scroll', function() {
   if (scrollpos >= header_height) { add_class_on_scroll() }
   else { remove_class_on_scroll() }
 
-  console.log(scrollpos)
 })
 
 // плавная прокрутка
@@ -1563,10 +1562,10 @@ let slider_about = new Swiper('.swiper-container', {
 	/*
 	effect: 'fade',
 	*/
-	// autoplay: {
-	// 	delay: 3000,
-	// 	disableOnInteraction: false,
-	// },
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: false,
+	},
 	autoHeight: true,
 	direction: 'vertical',
 	observer: true,
